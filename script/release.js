@@ -4,7 +4,11 @@ const path = require('path');
 
 var currentVersion = process.env.npm_package_version;
 var releaseType = process.argv[2] || 'patch';
-var newVersion = semver.inc(currentVersion, releaseType);
+if (releaseType.indexOf('v') === 0) {
+    var newVersion = releaseType.slice(1);
+} else {
+    var newVersion = semver.inc(currentVersion, releaseType);
+}
 var newVersionStr = 'v' + newVersion;
 
 var spawnOption = {
