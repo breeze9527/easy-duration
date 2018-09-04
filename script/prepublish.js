@@ -20,6 +20,10 @@ delete packageJson.devDependencies;
 
 packageJson.main = 'commonjs/easy-duration.js';
 packageJson.types = 'types';
+packageJson.files = [
+    "commonjs/",
+    "umd/"
+]
 
 // generate package.json
 fs.writeFileSync(path.join(DIST_PATH, 'package.json'), JSON.stringify(packageJson, null, '  '))
