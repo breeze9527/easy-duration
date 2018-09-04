@@ -20,6 +20,7 @@ delete packageJson.devDependencies;
 
 packageJson.main = 'commonjs/easy-duration.js';
 packageJson.types = 'types';
+packageJson.unpkg = 'umd/easy-duration.js';
 packageJson.files = [
     "commonjs/",
     "umd/"
