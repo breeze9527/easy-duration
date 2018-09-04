@@ -13,7 +13,7 @@ var spawnOption = {
 }
 
 // update version field in package.json
-spawn.sync('yarn', ['version', '--no-git-tag-version', newVersion], spawnOption);
+spawn.sync('yarn', ['version', '--no-git-tag-version', '--new-version', newVersion], spawnOption);
 
 spawn.sync('git', ['add', './package.json'], spawnOption);
 spawn.sync('git', ['add', './HISTORY.md'], spawnOption);
