@@ -1,0 +1,45 @@
+{
+    "extends": [
+        "tslint:latest",
+        "tslint-eslint-rules"
+    ],
+    "rules": {
+        "arrow-parens": [
+            true,
+            "ban-single-arg-parens"
+        ],
+        "curly": true,
+        "interface-name": false,
+        "max-line-length": false,
+        "member-access": false,
+        "member-ordering": true,
+        "no-any": true,
+        "no-bitwise": true,
+        "no-conditional-assignment": true,
+        "no-console": false,
+        "no-implicit-dependencies": false,
+        "no-submodule-imports": false,
+        "object-literal-sort-keys": false,
+        "ordered-imports": [
+            true,
+            {
+                "grouped-imports": true,
+                "named-imports-order": "lowercase-first"
+            }
+        ],
+        "quotemark": [
+            true,
+            "single"
+        ],
+        "trailing-comma": false,
+        "prefer-const": false,
+        "prefer-object-spread": true,
+        "variable-name": [
+            true,
+            "check-format",
+            "allow-leading-underscore",
+            "allow-pascal-case",
+            "allow-snake-case"
+        ]
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "declaration": true,
+        "declarationDir": "dist/types",
+        "module": "es6",
+        "noEmitOnError": true,
+        "noImplicitAny": true,
+        "noUnusedLocals": true,
+        "outDir": "es",
+        "strictNullChecks": true
+    },
+    "files": [
+        "./src/index.ts"
+    ]
+}

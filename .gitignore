@@ -1,0 +1,10 @@
+# dist result
+es/
+node_modules/
+dist/
+
+# log
+yarn-error.log
+
+# other
+.vscode
